@@ -391,14 +391,14 @@ function animate() {
 			})
 			
 			if (keys.arrowLeft.pressed && player.position.x >= 0) {
-				player.velocity.x = -5
+				player.velocity.x = -6
 				player.firing = false
 				player.orientation = 'left'
 				if (frames % 12 === 0) {
 					player.switchImages()
 				}
 			} else if (keys.arrowRight.pressed && player.position.x + player.width <= canvas.width) {
-				player.velocity.x = 5
+				player.velocity.x = 6
 				player.firing = false
 				player.orientation = 'right'
 				if (frames % 12 === 0) {
