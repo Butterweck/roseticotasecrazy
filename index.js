@@ -251,6 +251,7 @@ function animate() {
 		c.drawImage(bg, 0 , 0, bg.width * 0.5, bg.height * 0.5)
 		c.drawImage(logo, canvas.width / 2 - logo.width / 2 , canvas.height / 2 - 300, logo.width, logo.height)
 		c.drawImage(man, canvas.width / 2 - man.width / 2  , canvas.height / 2 , man.width, man.height)
+		frames = 0
 	} else {
 		if (player.gameover) {
 			c.drawImage(bg, 0 , 0, bg.width * 0.5, bg.height * 0.5)
