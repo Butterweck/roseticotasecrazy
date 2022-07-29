@@ -5,8 +5,8 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-canvas.width = innerWidth - 11
-canvas.height = innerHeight - 11
+canvas.width = 1366
+canvas.height = 700
 
 const bg = new Image()
 bg.src = './img/bg.png'
@@ -259,7 +259,7 @@ function animate() {
 			c.fillStyle = 'grey'
 			c.fillRect(canvas.width / 2 + 50, canvas.height / 2 + 170, 200, 50);
 			c.fillStyle = 'black'
-			c.font = '30px courier-new';
+			c.font = '30px courier new';
 			c.fillText(player.score, canvas.width / 2 + 70, canvas.height / 2 + 205)
 			finns.forEach((finn, index) => {
 				if (finn.escaped) {
@@ -269,15 +269,15 @@ function animate() {
 		} else {
 			c.drawImage(bg, 0 , 0, bg.width * 0.5, bg.height * 0.5)
 			c.fillStyle = 'black'
-			c.font = '20px courier-new';
+			c.font = '20px courier new';
 			score = "Score: " + player.score
 			lives = "Escape Pods left: " + player.lives + " x"
-			c.fillText(score, canvas.width - 150, 40)
+			c.fillText(score, canvas.width - 250, 40)
 			c.fillText(lives, 50, 40)
-			c.drawImage(pod, 220, 10, pod.width * 0.2, pod.height * 0.2)
+			c.drawImage(pod, 320, 10, pod.width * 0.2, pod.height * 0.2)
 			if (firstfinn && frames < firstfinnat + 150) {
-				c.font = '40px courier-new';
-				c.fillText('The first Finn is away!', canvas.width / 2 - 200, canvas.height / 2)
+				c.font = '40px courier new';
+				c.fillText('The first Finn is away!', canvas.width / 2 - 300, canvas.height / 2)
 			}	
 			
 			if (frames == levellength * 1) {
